@@ -13,6 +13,7 @@
   "sections": {
     "section_divider_NdcDpP": {
       "type": "section-divider",
+      "disabled": true,
       "name": "Section divider",
       "settings": {
         "visibility": "always-display",
@@ -33,7 +34,6 @@
         "image_A8YMYh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/logo-seccon_1.png",
             "image_width": 550,
             "alignment": "center",
             "url": "shopify://products/self-warming-cat-mat-for-small-cat-self-heating-dog-crate-pad-thermal-extra-warm-puppy-mat-indoor-outdoor-non-slip-washable",

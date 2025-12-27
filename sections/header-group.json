@@ -128,7 +128,7 @@
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "highlight_active_link": true,
-        "highlighted_link_color_scheme": "accent-1",
+        "highlighted_link_color_scheme": "background-1",
         "products_mega_menu_links": "",
         "products_mega_menu_display_collection_products": true,
         "products_mega_menu_display_collection_images": true,

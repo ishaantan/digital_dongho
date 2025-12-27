@@ -15,28 +15,34 @@
         "slide_AMF8gH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2_5fd98461-0bb5-4c3b-a15d-e296a62390da.jpg",
+            "image": "shopify://shop_images/Coll_1.webp",
             "heading": "Home is where the cat/dog is.",
             "description": "<p>The mat provides plush comfort, helping your dog enjoy a cool midday nap without the dampness or dirt from the floor. It ensures a refreshing summer, so you no longer have to worry about your \"Boss\" suffering from heatstroke!</p>",
-            "link": "shopify://products/self-warming-cat-mat-for-small-cat-self-heating-dog-crate-pad-thermal-extra-warm-puppy-mat-indoor-outdoor-non-slip-washable"
+            "product": "mode-watch",
+            "product_link_text": "View Product",
+            "audio_src": "https://cdn.shopify.com/s/files/1/0684/8531/6682/files/old-clock-ticking-352288.mp3?v=1766814853"
           }
         },
         "slide_w8dVjj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/597386039_2049232055923477_900990873096639827_n.jpg",
+            "image": "shopify://shop_images/Banner-Images_mobile2.webp",
             "heading": "A dog is the only thing on earth that loves you more than he loves himself.",
             "description": "<p>Give your furry friend nutritious tasty meals that support health energy and a happy active lifestyle.</p>",
-            "link": ""
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": "https://cdn.shopify.com/s/files/1/0684/8531/6682/files/clock-ticking-down-376897.mp3?v=1766814853"
           }
         },
         "slide_9zjaLA": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/1_81c3d37e-1ac9-400a-94be-f65b6aed4d2b.jpg",
+            "image": "shopify://shop_images/Coll_2.webp",
             "heading": "Connection",
             "description": "<p>Dogs and cats (traditionally seen as enemies) can become soulmates when they share a common love for their human.</p>",
-            "link": ""
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": "https://cdn.shopify.com/s/files/1/0684/8531/6682/files/old-clock-ticking-352288.mp3?v=1766814853"
           }
         }
       },
@@ -53,8 +59,94 @@
         "zoom_percent": 9,
         "heading_color": "#ffffff",
         "description_color": "#ffffff",
+        "product_link_color": "#ffffff",
+        "product_link_font_size": 16,
         "padding_top": 0,
         "padding_bottom": 0,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39"
+      }
+    },
+    "product_gallery_Bh8n7h": {
+      "type": "product-gallery",
+      "blocks": {
+        "product_BcWQR9": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_axAApk": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_7xMUcU": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_6aFfUX": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_BHBCw9": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_ec8kaf": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_EcWcat": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        },
+        "product_B63RFH": {
+          "type": "product",
+          "settings": {
+            "product": "mode-watch"
+          }
+        }
+      },
+      "block_order": [
+        "product_BcWQR9",
+        "product_axAApk",
+        "product_7xMUcU",
+        "product_6aFfUX",
+        "product_BHBCw9",
+        "product_ec8kaf",
+        "product_EcWcat",
+        "product_B63RFH"
+      ],
+      "name": "Product Gallery",
+      "settings": {
+        "display_id": false,
+        "title": "BUY ONE, <em>Get One 50% Off</em>",
+        "description": "<h5>For a limited time, when you purchase any wristwatch from our curated selection,<br/>you’ll receive a second watch at half price.</h5>",
+        "title_highlight_color": "#6d388b",
+        "heading_size": "h1",
+        "text_alignment": "center",
+        "full_width": true,
+        "columns_per_row": 4,
+        "mobile_columns": "1",
+        "gap_size": 20,
+        "enable_quick_add": true,
+        "color_scheme": "background-1",
+        "visibility": "always-display",
+        "padding_top": 0,
+        "padding_bottom": 20,
         "custom_colors_background": "#ffffff",
         "custom_gradient_background": "",
         "custom_colors_text": "#2e2a39"
@@ -66,7 +158,7 @@
         "image_9QbWTh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/597367982_2044648843048465_1610026836505603081_n.jpg",
+            "image": "shopify://shop_images/14a_487ac0cc-3c50-4178-a579-964981cd1779.webp",
             "heading": "Fur-baby",
             "description": "<p>In ancient times cats were worshipped as gods, they have not forgotten this.</p>",
             "link": "shopify://products/electromagnetic-anti-freezing-device-enjoy-a-clear-windshield-every-winter-morning",
@@ -83,7 +175,7 @@
         "image_Fcy8V4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/view-automatic-smart-feeder-household-pets.jpg",
+            "image": "shopify://shop_images/13b.webp",
             "heading": "My kids have paws.",
             "description": "<p>What greater gift than the love of a cat?</p>",
             "link": "shopify://products/self-warming-cat-mat-for-small-cat-self-heating-dog-crate-pad-thermal-extra-warm-puppy-mat-indoor-outdoor-non-slip-washable",
@@ -100,7 +192,7 @@
         "image_imCwCP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_81c3d37e-1ac9-400a-94be-f65b6aed4d2b.jpg",
+            "image": "shopify://shop_images/15a-8.webp",
             "heading": "I'm a proud Dog Mom / Cat Dad.",
             "description": "<p>Dogs are not our whole life, but they make our lives whole.</p>",
             "link": "shopify://products/self-warming-cat-mat-for-small-cat-self-heating-dog-crate-pad-thermal-extra-warm-puppy-mat-indoor-outdoor-non-slip-washable",
@@ -117,7 +209,7 @@
         "image_tQK4qn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_cbd6a686-29ce-46e7-8725-88ba6d14c6bf.jpg",
+            "image": "shopify://shop_images/10a.webp",
             "heading": "Equality",
             "description": "<p>Pets are treated as official family members (fur-babies).</p>",
             "link": "",
@@ -134,7 +226,7 @@
         "image_YdX6jC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/585888920_2027601938086489_7803747663084192166_n.jpg",
+            "image": "shopify://shop_images/Coll_3.jpg",
             "heading": "I'm a proud Dog Mom / Cat Dad.",
             "description": "<p>A cat has absolute emotional honesty: human beings, for one reason or another, may hide their feelings, but a cat does not.</p>",
             "link": "",
@@ -151,7 +243,7 @@
         "image_VMEFp4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/589610159_2034855470694469_7418633060386466914_n.jpg",
+            "image": "shopify://shop_images/collection_s.webp",
             "heading": "Trials and Triumphs",
             "description": "<p>Home is not just a place where you live; it’s where the tiny paws wait for you to return.</p>",
             "link": "",
@@ -168,7 +260,7 @@
         "image_YpkwrM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/588719048_2034819130698103_4174365728222771759_n.jpg",
+            "image": "shopify://shop_images/6a.webp",
             "heading": "Rescued is my favorite breed.",
             "description": "<p>Dogs come when they're called; cats take a message and get back to you later.</p>",
             "link": "",
@@ -185,7 +277,7 @@
         "image_aak38n": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/585368829_2027601911419825_9143514535565101294_n.jpg",
+            "image": "shopify://shop_images/5a.webp",
             "heading": "Pet Accessories",
             "description": "<p>Essential accessories for your pet's comfort and style.</p>",
             "link": "",
@@ -202,7 +294,7 @@
         "image_Ye4iTG": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/587230495_2034855517361131_7399926465654366275_n.jpg",
+            "image": "shopify://shop_images/10a.webp",
             "heading": "Empathy",
             "description": "<p>Sometimes words aren't necessary; a wagging tail or a soft purr is enough to heal the soul.</p>",
             "link": "",
@@ -236,7 +328,7 @@
         "desktop_columns": "2",
         "tablet_columns": "2",
         "mobile_columns": "1",
-        "gap_size": 16,
+        "gap_size": 1,
         "zoom_percent": 5,
         "heading_color": "#ffffff",
         "description_color": "#ffffff",
@@ -394,6 +486,7 @@
   },
   "order": [
     "hover_slider_wUdHH9",
+    "product_gallery_Bh8n7h",
     "image_gallery_PWzMdC",
     "0f1fc9e4-bc4c-4052-9747-62d1f8472caa",
     "contact_form_WHP8G7"

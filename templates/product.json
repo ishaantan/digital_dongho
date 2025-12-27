@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "main-product",
@@ -340,10 +340,10 @@
         "timeline_color": "accent-1",
         "media_size": "medium",
         "media_position": "left",
-        "gallery_layout": "thumbnail_slider",
-        "desktop_thumbnails_position": "bottom",
+        "gallery_layout": "thumbnail",
+        "desktop_thumbnails_position": "right",
         "desktop_thumbnails_count": 5,
-        "desktop_vertical_thumbnails_width": 16,
+        "desktop_vertical_thumbnails_width": 45,
         "desktop_vertical_thumbnails_hide_arrows": false,
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -388,67 +388,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 24
-      }
-    },
-    "hover_slider_KHJ89E": {
-      "type": "hover-slider",
-      "blocks": {
-        "slide_xRmfkq": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/585888920_2027601938086489_7803747663084192166_n.jpg",
-            "heading": "Slide heading",
-            "description": "<p>Add a description for this slide.</p>",
-            "link": ""
-          }
-        },
-        "slide_PLUd4z": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/589610159_2034855470694469_7418633060386466914_n.jpg",
-            "heading": "Pet Food",
-            "description": "<p>Give your furry friend nutritious tasty meals that support health energy and a happy active lifestyle.</p>",
-            "link": ""
-          }
-        },
-        "slide_XkBPGf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/587230495_2034855517361131_7399926465654366275_n.jpg",
-            "heading": "Cozy Sleep",
-            "description": "<p>Give your furry friend a comfortable place to rest.</p>",
-            "link": ""
-          }
-        },
-        "slide_YyRnUb": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/598550719_2047112789468737_539275923495865730_n.jpg",
-            "heading": "Pet Accessories",
-            "description": "<p>Essential accessories for your pet's comfort and style.</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_xRmfkq",
-        "slide_PLUd4z",
-        "slide_XkBPGf",
-        "slide_YyRnUb"
-      ],
-      "name": "Hover Slider",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "color_scheme": "background-1",
-        "zoom_percent": 7,
-        "heading_color": "#ffffff",
-        "description_color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "custom_colors_background": "#ffffff",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39"
       }
     },
     "8beb6911-28c6-482c-976a-e5421ad3e8df": {
@@ -522,7 +461,6 @@
           "settings": {
             "column": "col_3",
             "visibility": "always-display",
-            "image": "shopify://shop_images/585888920_2027601938086489_7803747663084192166_n.jpg",
             "width": 100,
             "alignment": "center",
             "mobile_alignment": "center",
@@ -616,6 +554,73 @@
         "custom_colors_outline_button": "#dd1d1d"
       }
     },
+    "hover_slider_KHJ89E": {
+      "type": "hover-slider",
+      "blocks": {
+        "slide_xRmfkq": {
+          "type": "slide",
+          "settings": {
+            "heading": "Slide heading",
+            "description": "<p>Add a description for this slide.</p>",
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": ""
+          }
+        },
+        "slide_PLUd4z": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pet Food",
+            "description": "<p>Give your furry friend nutritious tasty meals that support health energy and a happy active lifestyle.</p>",
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": ""
+          }
+        },
+        "slide_XkBPGf": {
+          "type": "slide",
+          "settings": {
+            "heading": "Cozy Sleep",
+            "description": "<p>Give your furry friend a comfortable place to rest.</p>",
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": ""
+          }
+        },
+        "slide_YyRnUb": {
+          "type": "slide",
+          "settings": {
+            "heading": "Pet Accessories",
+            "description": "<p>Essential accessories for your pet's comfort and style.</p>",
+            "product": "",
+            "product_link_text": "View Product",
+            "audio_src": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_xRmfkq",
+        "slide_PLUd4z",
+        "slide_XkBPGf",
+        "slide_YyRnUb"
+      ],
+      "name": "Hover Slider",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "color_scheme": "background-1",
+        "zoom_percent": 7,
+        "heading_color": "#ffffff",
+        "description_color": "#ffffff",
+        "product_link_color": "#ffffff",
+        "product_link_font_size": 16,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39"
+      }
+    },
     "image_banner_nHfVPV": {
       "type": "image-banner",
       "blocks": {
@@ -657,7 +662,6 @@
       "settings": {
         "display_id": false,
         "visibility": "always-display",
-        "image": "shopify://shop_images/view-automatic-smart-feeder-household-pets.jpg",
         "image_1_visibility": "always-display",
         "image_2_visibility": "always-display",
         "image_overlay_opacity": 10,
@@ -676,15 +680,14 @@
     "176645402872fb23af": {
       "type": "_blocks",
       "blocks": {
-         "ai_gen_block_a118c0f_xkayBt": {
-           "type": "ai_gen_block_a118c0f",
-           "settings": {
-             "media_type": "video",
-             "video": "",
-             "video_autoplay": true,
-             "video_loop": true,
-             "video_muted": true,
-             "video_controls": false,
+        "ai_gen_block_a118c0f_xkayBt": {
+          "type": "ai_gen_block_a118c0f",
+          "settings": {
+            "media_type": "video",
+            "video_autoplay": true,
+            "video_loop": true,
+            "video_muted": true,
+            "video_controls": false,
             "media_border_radius": 12,
             "media_width": 140,
             "html_content": "",

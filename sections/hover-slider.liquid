@@ -231,8 +231,14 @@
             src="{{ block.settings.audio_src }}"
           ></audio>
         {%- endif -%}
-        {%- if block.settings.link != blank -%}
-          <a href="{{ block.settings.link }}" class="hover-slider__link" aria-label="{{ block.settings.heading | default: 'Slide' | escape }}">
+        {%- liquid
+          assign slide_url = null
+          if block.settings.product != blank
+            assign slide_url = block.settings.product.url
+          endif
+        -%}
+        {%- if slide_url != blank -%}
+          <a href="{{ slide_url }}" class="hover-slider__link" aria-label="{{ block.settings.heading | default: 'Slide' | escape }}">
         {%- endif -%}
           <div class="hover-slider__image-wrapper">
             {%- if block.settings.image != blank -%}
@@ -266,12 +272,12 @@
           {%- endif -%}
           {%- if block.settings.product != blank -%}
             <div class="hover-slider__product-link-overlay">
-              <a href="{{ block.settings.product.url }}" class="hover-slider__product-link">
+              <a href="{{ slide_url }}" class="hover-slider__product-link">
                 {{ block.settings.product_link_text | default: 'View Product' }}
               </a>
             </div>
           {%- endif -%}
-        {%- if block.settings.link != blank -%}
+        {%- if slide_url != blank -%}
           </a>
         {%- endif -%}
       </div>
@@ -577,15 +583,10 @@
           "default": "<p>Add a description for this slide.</p>"
         },
         {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        },
-        {
           "type": "product",
           "id": "product",
-          "label": "Product",
-          "info": "Product link will appear on hover"
+          "label": "Product / Link",
+          "info": "Select a product to link to. The entire slide will be clickable and a product link will appear on hover."
         },
         {
           "type": "text",
