@@ -31,6 +31,17 @@
         --slide-inner-percentage-width: {{ section.settings.mobile_slides_inner_width }}%;
       }
     }
+
+    @media screen and (min-width: 750px) {
+      {% if section.settings.gallery_layout == 'thumbnail' %}
+      #MediaGallery-{{ section.id }} .thumbnail-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+        padding: 0 3px;
+      }
+      {% endif %}
+    }
   {%- endstyle -%}
 
   {% if section.settings.image_zoom == 'hover' %}
@@ -9667,11 +9678,11 @@
     {
       "type": "range",
       "id": "desktop_vertical_thumbnails_width",
-      "min": 10,
-      "max": 30,
-      "step": 2,
+      "min": 0,
+      "max": 100,
+      "step": 1,
       "label": "Vertical thumbnails width",
-      "default": 16,
+      "default": 15,
       "info": "Applied if \"Thumbnails position\" is set to \"Left\" or \"Right\"."
     },
     {
