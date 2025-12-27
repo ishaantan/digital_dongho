@@ -1,7 +1,7 @@
 {%- style -%}
   .hover-slider-{{ section.id }} {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - var(--header-height, 0px));
     overflow: hidden;
     position: relative;
   }
@@ -81,10 +81,69 @@
     color: {% if section.settings.description_color != blank %}{{ section.settings.description_color }}{% else %}#ffffff{% endif %};
   }
 
+  .hover-slider-{{ section.id }} .hover-slider__product-link-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__item:hover .hover-slider__product-link-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__product-link {
+    display: inline-block;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: {% if section.settings.product_link_font_size != blank %}{{ section.settings.product_link_font_size }}px{% else %}1rem{% endif %};
+    font-weight: 500;
+    text-decoration: none;
+    color: {% if section.settings.product_link_color != blank %}{{ section.settings.product_link_color }}{% else %}#ffffff{% endif %};
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__product-link::after {
+    content: '';
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: {% if section.settings.product_link_color != blank %}{{ section.settings.product_link_color }}{% else %}#ffffff{% endif %};
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__item:hover .hover-slider__product-link::after {
+    transform: scaleX(1);
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__audio {
+    display: none;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__item.is-playing {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z'/%3E%3C/svg%3E") 12 12, auto;
+  }
+
+  .hover-slider-{{ section.id }} .hover-slider__item.is-playing * {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z'/%3E%3C/svg%3E") 12 12, auto;
+  }
+
   @media screen and (max-width: 749px) {
     .hover-slider-{{ section.id }} {
       height: auto;
-      min-height: 100vh;
+      min-height: calc(100vh - var(--header-height, 0px));
     }
 
     .hover-slider-{{ section.id }} .hover-slider__container {
@@ -123,6 +182,10 @@
     .hover-slider-{{ section.id }} .hover-slider__description {
       font-size: 0.875rem;
     }
+
+    .hover-slider-{{ section.id }} .hover-slider__product-link {
+      font-size: {% if section.settings.product_link_font_size != blank %}{{ section.settings.product_link_font_size | times: 0.875 }}px{% else %}0.875rem{% endif %};
+    }
   }
 
   .section-{{ section.id }}-padding {
@@ -160,6 +223,14 @@
   <div class="hover-slider__container">
     {%- for block in section.blocks -%}
       <div class="hover-slider__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.audio_src != blank -%}
+          <audio 
+            class="hover-slider__audio" 
+            data-audio-id="{{ block.id }}"
+            preload="none"
+            src="{{ block.settings.audio_src }}"
+          ></audio>
+        {%- endif -%}
         {%- if block.settings.link != blank -%}
           <a href="{{ block.settings.link }}" class="hover-slider__link" aria-label="{{ block.settings.heading | default: 'Slide' | escape }}">
         {%- endif -%}
@@ -193,6 +264,13 @@
               {%- endif -%}
             </div>
           {%- endif -%}
+          {%- if block.settings.product != blank -%}
+            <div class="hover-slider__product-link-overlay">
+              <a href="{{ block.settings.product.url }}" class="hover-slider__product-link">
+                {{ block.settings.product_link_text | default: 'View Product' }}
+              </a>
+            </div>
+          {%- endif -%}
         {%- if block.settings.link != blank -%}
           </a>
         {%- endif -%}
@@ -200,6 +278,110 @@
     {%- endfor -%}
   </div>
 </div>
+
+<script>
+  (function() {
+    const sliderSection = document.querySelector('.hover-slider-{{ section.id }}');
+    if (!sliderSection) return;
+
+    let currentPlayingAudio = null;
+    let currentPlayingItem = null;
+    let audioUnlocked = false;
+
+    const sliderItems = sliderSection.querySelectorAll('.hover-slider__item');
+    const audioElements = sliderSection.querySelectorAll('.hover-slider__audio');
+    
+    // Function to unlock audio context
+    function unlockAudio(callback) {
+      if (audioUnlocked) {
+        if (callback) callback();
+        return Promise.resolve();
+      }
+      
+      // Try to unlock by playing and immediately pausing the first audio element
+      if (audioElements.length === 0) {
+        if (callback) callback();
+        return Promise.resolve();
+      }
+      
+      const firstAudio = audioElements[0];
+      const playPromise = firstAudio.play();
+      
+      if (playPromise !== undefined) {
+        return playPromise.then(function() {
+          firstAudio.pause();
+          firstAudio.currentTime = 0;
+          audioUnlocked = true;
+          if (callback) callback();
+        }).catch(function() {
+          // If unlock fails, callback will be called on next interaction
+          if (callback) callback();
+        });
+      }
+      
+      if (callback) callback();
+      return Promise.resolve();
+    }
+
+    // Unlock audio on any user interaction with the slider
+    sliderSection.addEventListener('click', function() {
+      unlockAudio();
+    }, { once: true });
+    
+    sliderSection.addEventListener('touchstart', function() {
+      unlockAudio();
+    }, { once: true });
+    
+    sliderItems.forEach(function(item) {
+      const audio = item.querySelector('.hover-slider__audio');
+      
+      if (!audio) return;
+
+      // Unlock and play when hovering over an item with audio
+      item.addEventListener('mouseenter', function() {
+        if (currentPlayingAudio && currentPlayingAudio !== audio) {
+          currentPlayingAudio.pause();
+          currentPlayingAudio.currentTime = 0;
+          if (currentPlayingItem) {
+            currentPlayingItem.classList.remove('is-playing');
+          }
+        }
+
+        function playAudio() {
+          const playPromise = audio.play();
+          if (playPromise !== undefined) {
+            playPromise.then(function() {
+              item.classList.add('is-playing');
+              currentPlayingAudio = audio;
+              currentPlayingItem = item;
+              audioUnlocked = true;
+            }).catch(function(error) {
+              // Audio play failed, likely needs user interaction
+              console.warn('Audio play failed. User interaction may be required.');
+            });
+          }
+        }
+
+        if (audioUnlocked) {
+          playAudio();
+        } else {
+          unlockAudio(playAudio);
+        }
+      });
+
+      item.addEventListener('mouseleave', function() {
+        audio.pause();
+        audio.currentTime = 0;
+        item.classList.remove('is-playing');
+        
+        if (currentPlayingAudio === audio) {
+          currentPlayingAudio = null;
+          currentPlayingItem = null;
+        }
+      });
+    });
+  })();
+</script>
 
 {% schema %}
 {
@@ -302,6 +484,24 @@
       "default": "#FFFFFF"
     },
     {
+      "type": "color",
+      "id": "product_link_color",
+      "label": "Product link color",
+      "default": "#FFFFFF",
+      "info": "Color for product link text and underline"
+    },
+    {
+      "type": "range",
+      "id": "product_link_font_size",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "Product link font size",
+      "default": 16,
+      "info": "Font size for product link text"
+    },
+    {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
     },
@@ -380,6 +580,28 @@
           "type": "url",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product",
+          "info": "Product link will appear on hover"
+        },
+        {
+          "type": "text",
+          "id": "product_link_text",
+          "label": "Product link text",
+          "default": "View Product"
+        },
+        {
+          "type": "header",
+          "content": "Audio Settings"
+        },
+        {
+          "type": "text",
+          "id": "audio_src",
+          "label": "Audio source",
+          "info": "Go to Shopify admin > Content > Files > Upload an mp3 file, copy the link and paste it in the field above"
         }
       ]
     }

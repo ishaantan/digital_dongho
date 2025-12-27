@@ -80,6 +80,12 @@
   if mobile_thumbnails_position == 'left' or mobile_thumbnails_position == 'right'
     assign mobile_vertical_thumbnails = true
   endif
+
+  assign max_thumbnails_display = 6
+  assign use_grid_layout = false
+  if desktop_thumbnails_position == 'right' and section.settings.gallery_layout contains 'thumbnail'
+    assign use_grid_layout = true
+  endif
 -%}
 
 <media-gallery
@@ -259,9 +265,10 @@
   -%}
     <slider-component
       id="GalleryThumbnails-{{ section.id }}{{ id_append }}"
-      class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails_position == 'hidden' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+      class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% unless section.settings.gallery_layout contains 'thumbnail' %} medium-hide large-up-hide{% endunless %}{% if section.settings.mobile_thumbnails_position == 'hidden' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}{% if use_grid_layout %} thumbnail-slider--grid-layout{% endif %}{% if desktop_thumbnails_position == 'right' and section.settings.gallery_layout contains 'thumbnail' %} thumbnail-slider--grid-layout{% endif %}"
       data-desktop-vertical="{{ desktop_vertical_thumbnails }}"
       data-mobile-vertical="{{ mobile_vertical_thumbnails }}"
+      {% if use_grid_layout %}data-grid-layout="true"{% endif %}
     >
       <button
         type="button"
