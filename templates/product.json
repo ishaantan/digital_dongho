@@ -390,6 +390,63 @@
         "padding_bottom": 24
       }
     },
+    "image_banner_nHfVPV": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_LjEGg8": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image banner",
+            "title_highlight_color": "#6d388b",
+            "heading_size": "h1"
+          }
+        },
+        "text_gk8Cb8": {
+          "type": "text",
+          "settings": {
+            "text": "Mess-free dining for your cats right on the carpet. Easy cleanup for you.",
+            "text_style": "body"
+          }
+        },
+        "buttons_mnMqDJ": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LjEGg8",
+        "text_gk8Cb8",
+        "buttons_mnMqDJ"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "display_id": false,
+        "visibility": "always-display",
+        "image": "shopify://shop_images/slider_3_341d85bd-ec63-4fd5-9b56-12b0f3f7793e.webp",
+        "image_1_visibility": "always-display",
+        "image_2_visibility": "always-display",
+        "image_overlay_opacity": 10,
+        "image_height": "medium",
+        "url": "",
+        "desktop_content_position": "top-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "transparent_container_color": "white",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "8beb6911-28c6-482c-976a-e5421ad3e8df": {
       "type": "custom-columns",
       "blocks": {
@@ -554,260 +611,245 @@
         "custom_colors_outline_button": "#dd1d1d"
       }
     },
-    "hover_slider_KHJ89E": {
-      "type": "hover-slider",
+    "image_text_YNwBg9": {
+      "type": "image-text",
       "blocks": {
-        "slide_xRmfkq": {
-          "type": "slide",
+        "image_text_pg78ta": {
+          "type": "image_text",
           "settings": {
-            "heading": "Slide heading",
-            "description": "<p>Add a description for this slide.</p>",
-            "product": "",
-            "product_link_text": "View Product",
-            "audio_src": ""
+            "image": "shopify://shop_images/13b.webp",
+            "html_content": "",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": true,
+            "row_desktop_columns": "4",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
           }
         },
-        "slide_PLUd4z": {
-          "type": "slide",
+        "image_text_6V9CHA": {
+          "type": "image_text",
           "settings": {
-            "image": "shopify://shop_images/Coll_2.webp",
-            "heading": "Pet Food",
-            "description": "<p>Give your furry friend nutritious tasty meals that support health energy and a happy active lifestyle.</p>",
-            "product": "",
-            "product_link_text": "View Product",
-            "audio_src": ""
+            "html_content": "<div style=\"color: #000000;\">\n    <h2 style=\"font-size: 22px; font-weight: bold; margin-bottom: 10px;\">\n        Dries Fast, Stays Fresh\n    </h2>\n    \n    <div style=\"font-size: 10px;\">\n        <p style=\"margin-bottom: 5px;\">\n            While ordinary mats stay damp for hours, the Magic Mat™ dries within minutes.\n        </p>\n        <p style=\"margin-bottom: 5px;\">\n            Its open-cell core releases moisture quickly, preventing that musty, wet smell.\n        </p>\n        <p style=\"margin-bottom: 0;\">\n            Always dry, always ready for the next use.\n        </p>\n    </div>\n</div>",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
           }
         },
-        "slide_XkBPGf": {
-          "type": "slide",
+        "image_text_UL6nqM": {
+          "type": "image_text",
           "settings": {
-            "heading": "Cozy Sleep",
-            "description": "<p>Give your furry friend a comfortable place to rest.</p>",
-            "product": "",
-            "product_link_text": "View Product",
-            "audio_src": ""
+            "image": "shopify://shop_images/10a.webp",
+            "html_content": "",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
           }
         },
-        "slide_YyRnUb": {
-          "type": "slide",
+        "image_text_tdtfK6": {
+          "type": "image_text",
           "settings": {
-            "heading": "Pet Accessories",
-            "description": "<p>Essential accessories for your pet's comfort and style.</p>",
-            "product": "",
-            "product_link_text": "View Product",
-            "audio_src": ""
+            "html_content": "<div style=\"color: #000000;\">\n    <h2 style=\"font-size: 22px; font-weight: bold; margin-bottom: 10px;\">\n        Dries Fast, Stays Fresh\n    </h2>\n    \n    <div style=\"font-size: 10px;\">\n        <p style=\"margin-bottom: 5px;\">\n            While ordinary mats stay damp for hours, the Magic Mat™ dries within minutes.\n        </p>\n        <p style=\"margin-bottom: 5px;\">\n            Its open-cell core releases moisture quickly, preventing that musty, wet smell.\n        </p>\n        <p style=\"margin-bottom: 0;\">\n            Always dry, always ready for the next use.\n        </p>\n    </div>\n</div>",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_kDejN3": {
+          "type": "image_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Coll_3.jpg",
+            "html_content": "",
+            "heading": "Image heading",
+            "description": "<p>Add a description for this image.</p>",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": true,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_wnq4DJ": {
+          "type": "image_text",
+          "disabled": true,
+          "settings": {
+            "html_content": "<div style=\"color: #000000;\">\n    <h2 style=\"font-size: 22px; font-weight: bold; margin-bottom: 10px;\">\n        Dries Fast, Stays Fresh\n    </h2>\n    \n    <div style=\"font-size: 10px;\">\n        <p style=\"margin-bottom: 5px;\">\n            While ordinary mats stay damp for hours, the Magic Mat™ dries within minutes.\n        </p>\n        <p style=\"margin-bottom: 5px;\">\n            Its open-cell core releases moisture quickly, preventing that musty, wet smell.\n        </p>\n        <p style=\"margin-bottom: 0;\">\n            Always dry, always ready for the next use.\n        </p>\n    </div>\n</div>",
+            "heading": "Image heading",
+            "description": "<p>Add a description for this image.</p>",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_FYYfYt": {
+          "type": "image_text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Coll_1.webp",
+            "html_content": "",
+            "heading": "Image heading",
+            "description": "<p>Add a description for this image.</p>",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_CdLAGV": {
+          "type": "image_text",
+          "settings": {
+            "html_content": "<div style=\"color: #000000;\">\n    <h2 style=\"font-size: 22px; font-weight: bold; margin-bottom: 10px;\">\n        Dries Fast, Stays Fresh\n    </h2>\n    \n    <div style=\"font-size: 10px;\">\n        <p style=\"margin-bottom: 5px;\">\n            While ordinary mats stay damp for hours, the Magic Mat™ dries within minutes.\n        </p>\n        <p style=\"margin-bottom: 5px;\">\n            Its open-cell core releases moisture quickly, preventing that musty, wet smell.\n        </p>\n        <p style=\"margin-bottom: 0;\">\n            Always dry, always ready for the next use.\n        </p>\n    </div>\n</div>",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": true,
+            "row_desktop_columns": "4",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_PTVD9L": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify://shop_images/6a.webp",
+            "html_content": "",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_p3yhWc": {
+          "type": "image_text",
+          "settings": {
+            "html_content": "<div style=\"color: #000000;\">\n    <h2 style=\"font-size: 22px; font-weight: bold; margin-bottom: 10px;\">\n        Dries Fast, Stays Fresh\n    </h2>\n    \n    <div style=\"font-size: 10px;\">\n        <p style=\"margin-bottom: 5px;\">\n            While ordinary mats stay damp for hours, the Magic Mat™ dries within minutes.\n        </p>\n        <p style=\"margin-bottom: 5px;\">\n            Its open-cell core releases moisture quickly, preventing that musty, wet smell.\n        </p>\n        <p style=\"margin-bottom: 0;\">\n            Always dry, always ready for the next use.\n        </p>\n    </div>\n</div>",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
+          }
+        },
+        "image_text_tFzYJG": {
+          "type": "image_text",
+          "settings": {
+            "image": "shopify://shop_images/5a.webp",
+            "html_content": "",
+            "heading": "",
+            "description": "",
+            "link": "",
+            "audio_src": "",
+            "start_new_row": false,
+            "row_desktop_columns": "3",
+            "row_tablet_columns": "2",
+            "row_mobile_columns": "1",
+            "desktop_columns_span": 1,
+            "tablet_columns_span": 1,
+            "mobile_columns_span": 1
           }
         }
       },
       "block_order": [
-        "slide_xRmfkq",
-        "slide_PLUd4z",
-        "slide_XkBPGf",
-        "slide_YyRnUb"
+        "image_text_pg78ta",
+        "image_text_6V9CHA",
+        "image_text_UL6nqM",
+        "image_text_tdtfK6",
+        "image_text_kDejN3",
+        "image_text_wnq4DJ",
+        "image_text_FYYfYt",
+        "image_text_CdLAGV",
+        "image_text_PTVD9L",
+        "image_text_p3yhWc",
+        "image_text_tFzYJG"
       ],
-      "name": "Hover Slider",
+      "name": "Image Text",
       "settings": {
         "display_id": false,
         "visibility": "always-display",
         "color_scheme": "background-1",
-        "zoom_percent": 7,
-        "heading_color": "#ffffff",
-        "description_color": "#ffffff",
-        "product_link_color": "#ffffff",
-        "product_link_font_size": 16,
+        "desktop_columns": "3",
+        "tablet_columns": "2",
+        "mobile_columns": "1",
+        "gap_size": 0,
+        "zoom_percent": 9,
+        "heading_color": "#FFFFFF",
+        "description_color": "#FFFFFF",
+        "overlay_opacity": 70,
         "padding_top": 0,
         "padding_bottom": 0,
-        "custom_colors_background": "#ffffff",
-        "custom_gradient_background": "",
-        "custom_colors_text": "#2e2a39"
-      }
-    },
-    "image_banner_nHfVPV": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_LjEGg8": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "title": "Image banner",
-            "title_highlight_color": "#6d388b",
-            "heading_size": "h1"
-          }
-        },
-        "text_gk8Cb8": {
-          "type": "text",
-          "settings": {
-            "text": "Mess-free dining for your cats right on the carpet. Easy cleanup for you.",
-            "text_style": "body"
-          }
-        },
-        "buttons_mnMqDJ": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LjEGg8",
-        "text_gk8Cb8",
-        "buttons_mnMqDJ"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "image": "shopify://shop_images/slider_3_341d85bd-ec63-4fd5-9b56-12b0f3f7793e.webp",
-        "image_1_visibility": "always-display",
-        "image_2_visibility": "always-display",
-        "image_overlay_opacity": 10,
-        "image_height": "medium",
-        "url": "",
-        "desktop_content_position": "top-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "transparent_container_color": "white",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "176645402872fb23af": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_a118c0f_xkayBt": {
-          "type": "ai_gen_block_a118c0f",
-          "settings": {
-            "media_type": "video",
-            "video_autoplay": true,
-            "video_loop": true,
-            "video_muted": true,
-            "video_controls": false,
-            "media_border_radius": 12,
-            "media_width": 140,
-            "html_content": "",
-            "content_font_size": 16,
-            "content_padding": 20,
-            "content_border_radius": 0,
-            "content_background_color": "#ffffff",
-            "content_text_color": "#333333",
-            "content_link_color": "#58d68d",
-            "show_left_block": true,
-            "left_width": 90,
-            "show_right_block": false,
-            "right_width": 10,
-            "mobile_media_first": true
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_a118c0f_xkayBt"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
-    "testimonials_rJkzkc": {
-      "type": "testimonials",
-      "blocks": {
-        "column_8kKNL7": {
-          "type": "column",
-          "settings": {
-            "star_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
-          }
-        },
-        "column_Ee8BXJ": {
-          "type": "column",
-          "settings": {
-            "star_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
-          }
-        },
-        "column_fK4p7w": {
-          "type": "column",
-          "settings": {
-            "star_rating": 5,
-            "title": "Heading",
-            "text": "<p>Share positive thoughts and feedback from your customer..</p>",
-            "author": "<em><strong>Author</strong></em>"
-          }
-        }
-      },
-      "block_order": [
-        "column_8kKNL7",
-        "column_Ee8BXJ",
-        "column_fK4p7w"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "display_id": false,
-        "visibility": "always-display",
-        "title": "Testimonials",
-        "title_highlight_color": "#6D388B",
-        "heading_size": "h1",
-        "text": "",
-        "color_scheme": "background-1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "column_alignment": "center",
-        "show_stars": true,
-        "inactive_stars_style": "solid",
-        "star_color": "#ffcc00",
-        "bg_star_color": "#ececec",
-        "show_quotes": true,
-        "quotes_color_scheme": "accent-2",
-        "cards_color_scheme": "bg-overlay",
-        "type": "slide",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "arrows_color_scheme": "inverse",
-        "transparent_arrows": true,
-        "dots_color_scheme": "inverse",
-        "desktop_full_page": false,
-        "columns_desktop": 3,
-        "slider_desktop": false,
-        "per_move_desktop": 1,
-        "desktop_spacing": 40,
-        "desktop_side_padding": 0,
-        "desktop_padding_calc": true,
-        "desktop_adaptive_height": false,
-        "desktop_dots_position": "under",
-        "desktop_arrows_position": "sides",
-        "slider_mobile": true,
-        "enable_mobile_preview": false,
-        "mobile_adaptive_height": false,
-        "mobile_dots_position": "under",
-        "mobile_arrows_position": "under",
-        "padding_top": 36,
-        "padding_bottom": 36,
         "custom_colors_background": "#FFFFFF",
         "custom_gradient_background": "",
-        "custom_colors_text": "#2E2A39",
-        "custom_cards_colors_background": "#F3F3F3",
-        "custom_cards_gradient_background": "",
-        "custom_cards_colors_text": "#2E2A39"
+        "custom_colors_text": "#2E2A39"
       }
     }
   },
   "order": [
     "main",
-    "related-products",
     "8beb6911-28c6-482c-976a-e5421ad3e8df",
-    "hover_slider_KHJ89E",
-    "testimonials_rJkzkc",
-    "image_banner_nHfVPV",
-    "176645402872fb23af"
+    "image_text_YNwBg9",
+    "related-products",
+    "image_banner_nHfVPV"
   ]
 }
